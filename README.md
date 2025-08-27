@@ -83,7 +83,7 @@ GROUP BY t.treatment_type, status;
 ```
 ---
 ### Vizualization
-()
+1(Images/Medain_VS_Avg_Cost_treatment.png)
 ## Key Insights
 
 ### 1. Appointment Statistics

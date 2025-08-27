@@ -105,7 +105,7 @@ WHERE status IN ('Completed', 'Scheduled')
 GROUP BY b.payment_method, status;
 ```
 ### Vizualization
-![Median and Average Treatment Cost on Payment Method and Status](Images/Avg_vs_Median_Cost_by_payment_method_and_status.png)
+![Median and Average Treatment Cost on Payment Method and Status](Images/Avg_Vs_Median_Cost_on_payment_method.png)
 # Insights
 The chart reveals that insurance payments are associated with the highest average and median treatment costs, especially for completed appointments, making it a critical revenue source. Scheduled appointments paid by cash tend to have slightly higher costs than completed ones, indicating potential upfront billing differences. Monitoring payment method cost patterns will help finance teams optimize cash flow and prioritize billing efforts across payment types.
 

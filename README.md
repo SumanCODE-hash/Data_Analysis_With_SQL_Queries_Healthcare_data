@@ -86,6 +86,29 @@ GROUP BY t.treatment_type, status;
 ![Median and Average Treatment Cost on Treatment Type and Status](Images/Medain_VS_Avg_Cost_treatment.png)
 # Insights
 The chart shows that MRI has the highest average and median treatment costs, indicating a significant revenue driver. Scheduled chemotherapy and physiotherapy appointments have higher costs than completed ones, suggesting potential cost variations in upcoming treatments. Monitoring these cost differences can help optimize budgeting and revenue forecasting for hospital finance management.
+
+## Query 3: Appointments by Payment Method and Status with Avg + Median Cost
+-- Purpose: Examine how payment methods (cash, insurance, card) vary across completed and scheduled appointments.
+-- Insight: Supports revenue-cycle management and payment strategy optimization.
+
+```sql
+SELECT
+    b.payment_method,
+    status,
+    COUNT(*) AS total_appointments,
+    AVG(t.cost) AS avg_cost,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY t.cost) AS median_cost
+FROM appointments a
+LEFT JOIN treatments t ON t.appointment_id = a.appointment_id
+LEFT JOIN billing b ON b.treatment_id = t.treatment_id
+WHERE status IN ('Completed', 'Scheduled')
+GROUP BY b.payment_method, status;
+```
+### Vizualization
+![Median and Average Treatment Cost on Payment Method and Status](Images/Avg_vs_Median_Cost_by_payment_method_and_status.png)
+# Insights
+The chart reveals that insurance payments are associated with the highest average and median treatment costs, especially for completed appointments, making it a critical revenue source. Scheduled appointments paid by cash tend to have slightly higher costs than completed ones, indicating potential upfront billing differences. Monitoring payment method cost patterns will help finance teams optimize cash flow and prioritize billing efforts across payment types.
+
 ## Key Insights
 
 ### 1. Appointment Statistics

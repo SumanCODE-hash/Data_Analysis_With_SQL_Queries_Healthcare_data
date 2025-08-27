@@ -109,7 +109,8 @@ GROUP BY b.payment_method, status;
 # Insights
 The chart reveals that insurance payments are associated with the highest average and median treatment costs, especially for completed appointments, making it a critical revenue source. Scheduled appointments paid by cash tend to have slightly higher costs than completed ones, indicating potential upfront billing differences. Monitoring payment method cost patterns will help finance teams optimize cash flow and prioritize billing efforts across payment types.
 
-## Key Insights
+
+## Overall Key Insights
 
 ### 1. Appointment Statistics
 

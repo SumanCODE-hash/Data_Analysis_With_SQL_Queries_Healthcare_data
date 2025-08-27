@@ -64,3 +64,106 @@ LEFT JOIN billing b ON b.treatment_id = t.treatment_id
 LEFT JOIN patients p ON p.patient_id = a.patient_id
 WHERE status IN ('Completed', 'Scheduled');
 ```
+
+---
+
+## Key Insights
+
+### 1. Appointment Statistics
+
+| Metric               | Count | Percentage |
+|----------------------|-------|------------|
+| Total Appointments    | 120   | 100%       |
+| Scheduled (Upcoming)  | 60    | 50%        |
+| Completed (Done)      | 60    | 50%        |
+
+### 2. Payment Status Overview
+
+| Status   | Count | Percentage |
+|----------|-------|------------|
+| Paid     | 32    | 26.7%      |
+| Pending  | 34    | 28.3%      |
+| Failed   | 54    | 45%        |
+
+*Nearly half of the appointments have failed payments, posing notable revenue risks.*
+
+### 3. Payment Methods Distribution
+
+| Method      | Count | Percentage |
+|-------------|-------|------------|
+| Cash        | 36    | 30%        |
+| Credit Card | 34    | 28.3%      |
+| Insurance   | 50    | 41.7%      |
+
+*Insurance is the leading payment method but failed payments are high among cash and credit card users.*
+
+### 4. Reason for Visit Breakdown
+
+| Reason       | Count |
+|--------------|-------|
+| Follow-up    | 34    |
+| Checkup      | 28    |
+| Therapy      | 20    |
+| Emergency    | 20    |
+| Consultation | 18    |
+
+*Follow-ups dominate, signaling strong patient retention.*
+
+### 5. Treatment Type Frequency
+
+| Treatment     | Count |
+|---------------|-------|
+| Chemotherapy  | 38    |
+| ECG           | 22    |
+| MRI           | 22    |
+| Physiotherapy | 20    |
+| X-Ray         | 18    |
+
+*Chemotherapy treatments are most frequent, likely due to recurring sessions.*
+
+### 6. Insurance Provider Counts
+
+| Provider       | Count |
+|----------------|-------|
+| MedCare Plus   | 34    |
+| WellnessCorp   | 30    |
+| PulseSecure    | 28    |
+| HealthIndia    | 28    |
+
+*All providers show similar patient coverage; failed payments are widespread.*
+
+### 7. Cost Analysis
+
+| Metric                      | Value ($) |
+|-----------------------------|-----------|
+| Average Cost per Appointment | ~2,693    |
+| Minimum Cost                 | 534       |
+| Maximum Cost                 | 4,964     |
+
+*Expensive treatments like Chemotherapy and MRI drive major revenue but pose financial risk if unpaid.*
+
+### 8. Appointment Status Insights
+
+- **Upcoming:** Frequent high-cost treatments like MRI and Chemotherapy with many pending or failed payments.
+- **Completed:** Most payments successful but a concerning number remain unpaid, requiring follow-up.
+
+### 9. Payment Method Cost Insights
+
+- **Cash:** Moderate costs; scheduled appointments slightly more expensive than completed; median cost > average (skewed by low cost).
+- **Credit Card:** Stable costs between completed and scheduled; average > median (skewed by high cost).
+- **Insurance:** Highest cost treatments; completed appointments costlier than scheduled; median > average (skewed by low cost).
+
+**Overall Cost Ranking (Completed Appointments):**  
+`Insurance > Credit Card > Cash`
+
+Scheduled appointment costs are higher for Cash and Credit Card, while Insurance costs dominate completed appointments.
+
+---
+
+## Conclusion
+
+This integrated SQL analysis highlights critical operational and financial patterns in hospital appointment and billing datasets. Addressing payment failures, especially in high-cost treatments, and monitoring payment methods closely can help improve revenue collection and patient care efficiency.
+
+---
+
+Feel free to clone the repo and adapt the SQL queries to your own healthcare datasets for similar insights!

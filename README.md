@@ -41,7 +41,7 @@ This repository includes SQL scripts for healthcare analytics that can be adapte
 -- 🔹 Query 1: Appointment + Treatment + Billing + Patient Integration
 -- Purpose: Create a comprehensive view of appointment status, reasons for visit, treatment details, billing, and insurance provider.
 -- Insight: Supports clinical + financial reporting by combining operational and billing data into one unified dataset.
-``sql
+```sql
 SELECT
     a.appointment_id,
     reason_for_visit,
@@ -62,3 +62,4 @@ LEFT JOIN treatments t ON t.appointment_id = a.appointment_id
 LEFT JOIN billing b ON b.treatment_id = t.treatment_id
 LEFT JOIN patients p ON p.patient_id = a.patient_id
 WHERE status IN ('Completed', 'Scheduled');
+```

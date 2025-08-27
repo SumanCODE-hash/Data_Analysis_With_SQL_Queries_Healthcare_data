@@ -83,7 +83,7 @@ GROUP BY t.treatment_type, status;
 ```
 ---
 ### Vizualization
-!(Images/Medain_VS_Avg_Cost_treatment.png)
+![Median and Average Treatment Cost on Treatment Type and Status](Images/Medain_VS_Avg_Cost_treatment.png)
 ## Key Insights
 
 ### 1. Appointment Statistics

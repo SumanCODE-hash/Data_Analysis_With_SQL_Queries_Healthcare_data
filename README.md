@@ -84,6 +84,8 @@ GROUP BY t.treatment_type, status;
 ---
 ### Vizualization
 ![Median and Average Treatment Cost on Treatment Type and Status](Images/Medain_VS_Avg_Cost_treatment.png)
+# Insights
+The chart shows that MRI has the highest average and median treatment costs, indicating a significant revenue driver. Scheduled chemotherapy and physiotherapy appointments have higher costs than completed ones, suggesting potential cost variations in upcoming treatments. Monitoring these cost differences can help optimize budgeting and revenue forecasting for hospital finance management.
 ## Key Insights
 
 ### 1. Appointment Statistics

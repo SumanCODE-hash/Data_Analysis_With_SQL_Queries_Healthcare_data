@@ -1,12 +1,14 @@
 /*
 Problem Statement:
 
-Management wants to assess insurance-linked revenue risks by analyzing how different insurance providers are performing in terms of payment status (Paid, Pending, Failed). This helps identify providers with high pending or failed claims, guiding collection prioritization and follow-up actions to secure revenue.
+Management wants to assess insurance-linked revenue risks by analyzing how different insurance providers are performing in terms of payment status
+(Paid, Pending, Failed). This helps identify providers with high pending or failed claims, guiding collection prioritization and follow-up actions to secure revenue.
 */
 
 -- 🔹 Query 4: Insurance Provider Payment Status Breakdown
 -- Purpose: Show how payments are distributed across insurance providers.
--- Insight: Highlights providers with high Pending/Failed payments, along with avgerage and medianl billing amounr, helping prioritize follow-ups and assess revenue-at-risk by insurance partner.
+-- Insight: Highlights providers with high Pending/Failed payments, along with avgerage and medianl billing amounr,
+helping prioritize follow-ups and assess revenue-at-risk by insurance partner.
 
 
 SELECT
@@ -24,7 +26,10 @@ ORDER BY total_patients DESC;
 /*
 Insights:
 1️⃣ Observations / Insights
-MedCare Plus insurance shows a high number of pending patient payments with the lowest median billed amounts, while paid and failed payments both have elevated billed values, indicating inconsistency in collection success. PulseSecure’s paid and pending claims reflect higher median amounts, suggesting more expensive services but also increased payment risk. WellnessCorp and HealthIndia face challenges with failed and pending payments at relatively high median values, highlighting the need for targeted follow-up and improved reimbursement processes to protect cash flow.
+MedCare Plus insurance shows a high number of pending patient payments with the lowest median billed amounts, while paid and failed payments both have elevated billed values,
+indicating inconsistency in collection success. PulseSecure’s paid and pending claims reflect higher median amounts, suggesting more expensive services but also increased 
+payment risk.WellnessCorp and HealthIndia face challenges with failed and pending payments at relatively high median values, highlighting the need for targeted follow-up
+and improved reimbursement processes to protect cash flow.
 
 Results:
 [
@@ -107,4 +112,5 @@ Results:
   }
 ]
 */
+
 

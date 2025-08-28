@@ -10,8 +10,6 @@ Management wants to assess insurance-linked revenue risks by analyzing how diffe
 -- Insight: Highlights providers with high Pending/Failed payments, along with avgerage and medianl billing amounr,
 helping prioritize follow-ups and assess revenue-at-risk by insurance partner.
 
-    
-```sql
 SELECT
     COUNT (*)  AS total_patients,
     p.insurance_provider,
@@ -23,7 +21,7 @@ LEFT JOIN billing b ON b.patient_id = p.patient_id
 WHERE b.payment_method = 'Insurance'
 GROUP BY p.insurance_provider, b.payment_status
 ORDER BY total_patients DESC;
-```
+
 /*
 Insights:
 1️⃣ Observations / Insights
@@ -113,6 +111,7 @@ Results:
   }
 ]
 */
+
 
 
 

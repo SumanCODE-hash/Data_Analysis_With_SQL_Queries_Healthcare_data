@@ -11,6 +11,7 @@ Hospitals often face challenges tracking patient appointments, treatment outcome
 - Monitor service delivery effectively
 - Identify potential revenue leakage
 - Assess operational efficiency comprehensively
+- Healthcare Demographics & Workforce Insights
 
 ---
 

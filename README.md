@@ -191,7 +191,17 @@ GROUP BY d.specialization;
 | Doctors by Hospital Branch | Doctors by Specialization |
 |----------------------------|----------------------------|
 | ![Counts doctors in each hospital branch](Images/Doctors_by_Hospital_Branch.png) | ![Number of doctors by specialization](Images/Doctors_by_Specialization.png) |
+## Insights:
+1️⃣ Observations / Insights
+The hospital serves 50 patients, with a higher share of males (31) compared to females (19).
 
+Insurance coverage is diverse, with MedCare Plus (18 patients) and WellnessCorp (16 patients) being the leading providers, while PulseSecure (10) and HealthIndia (6) cover fewer patients.
+
+Workforce distribution shows Central Hospital has the highest doctor count (4), while Eastside and Westside Clinics each have 3 doctors, indicating relatively balanced staffing.
+
+By specialization, Pediatrics dominates (5 doctors), suggesting strong child healthcare capacity, while Dermatology (3) and Oncology (2) have fewer specialists.
+
+Overall, the data highlights a gender imbalance in patients, uneven insurance representation, and potential workforce gaps in specialized areas like oncology.
 ## Overall Key Insights
 
 ### 1. Appointment Statistics

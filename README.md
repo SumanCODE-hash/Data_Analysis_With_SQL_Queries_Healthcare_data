@@ -139,6 +139,48 @@ ORDER BY total_patients DESC;
 1️⃣ Observations / Insights
 MedCare Plus insurance shows a high number of pending patient payments with the lowest median billed amounts, while paid and failed payments both have elevated billed values, indicating inconsistency in collection success. PulseSecure’s paid and pending claims reflect higher median amounts, suggesting more expensive services but also increased payment risk. WellnessCorp and HealthIndia face challenges with failed and pending payments at relatively high median values, highlighting the need for targeted follow-up and improved reimbursement processes to protect cash flow.
 
+
+Problem Statement:
+Hospital management needs visibility into patient demographics and workforce distribution to optimize resource allocation, strengthen payer strategy, and ensure balanced care delivery across branches and specializations
+## Query 4: Healthcare Demographics & Workforce Insights
+
+# Counts patients grouped by gender to reveal demographic trends in the patient population.
+
+```sql
+SELECT
+    COUNT(*) AS total_patients,
+    p.gender
+FROM patients p
+GROUP BY p.gender;
+```
+# Shows how many patients are associated with each insurance provider, useful for payer mix analysis.
+
+```sql
+SELECT
+    COUNT(*) AS total_patients,
+    p.insurance_provider
+FROM patients p
+GROUP BY p.insurance_provider;
+```
+# Counts doctors in each hospital branch to highlight workforce distribution.
+
+```sql
+SELECT
+    COUNT(*) AS total_doctors,
+    d.hospital_branch
+FROM doctors d
+GROUP BY hospital_branch;
+```
+# Summarizes the number of doctors by specialization, identifying strengths and potential gaps in expertise.
+
+```sql
+SELECT
+    COUNT(*) AS total_doctors,
+    d.specialization
+FROM doctors d
+GROUP BY d.specialization;
+```
+
 ## Overall Key Insights
 
 ### 1. Appointment Statistics

@@ -181,14 +181,17 @@ FROM doctors d
 GROUP BY d.specialization;
 ```
 
-### Vizualization
-![Counts patients grouped by gender](Images/Patients_by_Gender.png)
 
-![How many patients are associated with each insurance provider](Images/Patients_by_Insurance_Provider.png)
+### Visualizations
 
-![Counts doctors in each hospital branch](Images/Doctors_by_Hospital_Branch.png)
+| Patients by Gender | Patients by Insurance Provider |
+|--------------------|--------------------------------|
+| ![Counts patients grouped by gender](Images/Patients_by_Gender.png) | ![How many patients are associated with each insurance provider](Images/Patients_by_Insurance_Provider.png) |
 
-![Number of doctors by specialization](Images/Doctors_by_Specialization.png)
+| Doctors by Hospital Branch | Doctors by Specialization |
+|----------------------------|----------------------------|
+| ![Counts doctors in each hospital branch](Images/Doctors_by_Hospital_Branch.png) | ![Number of doctors by specialization](Images/Doctors_by_Specialization.png) |
+
 ## Overall Key Insights
 
 ### 1. Appointment Statistics

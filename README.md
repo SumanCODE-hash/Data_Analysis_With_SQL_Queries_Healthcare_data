@@ -1,3 +1,4 @@
+---
 # Healthcare Data Analysis with SQL Queries
 
 This project applies SQL analytics to healthcare data encompassing patient appointments, treatments, and billing information. Using advanced SQL techniques including **joins**, **common table expressions (CTEs)**, and **CASE expressions**, the analysis provides actionable insights into hospital operations, patient care, and revenue management.

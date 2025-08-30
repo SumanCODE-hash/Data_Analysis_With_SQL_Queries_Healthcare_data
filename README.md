@@ -36,9 +36,13 @@ The query aims to answer the following questions:
 - Detailed insights into revenue streams, payment patterns, and operational performance indicators
 
 ---
-
+## Tools that used in this project
+1. PostgreSQL as dataase,
+2. SQL queries to perform analysis
+3. Python (pandas, matplotlib, seaborn) to Vizualization
+4. 
 This repository includes SQL scripts for healthcare analytics that can be adapted for hospital data systems aiming to enhance patient care tracking and financial oversight.
-
+---
 ## Query 1: Appointment + Treatment + Billing + Patient Integration
 -- Purpose: Create a comprehensive view of appointment status, reasons for visit, treatment details, billing, and insurance provider.
 -- Insight: Supports clinical + financial reporting by combining operational and billing data into one unified dataset.
@@ -299,6 +303,4 @@ Scheduled appointment costs are higher for Cash and Credit Card, while Insurance
 
 This integrated SQL analysis highlights critical operational and financial patterns in hospital appointment and billing datasets. Addressing payment failures, especially in high-cost treatments, and monitoring payment methods closely can help improve revenue collection and patient care efficiency.
 
----
 
-Feel free to clone the repo and adapt the SQL queries to your own healthcare datasets for similar insights!

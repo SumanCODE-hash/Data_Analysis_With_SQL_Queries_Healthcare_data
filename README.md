@@ -40,7 +40,9 @@ The query aims to answer the following questions:
 1. PostgreSQL as dataase,
 2. SQL queries to perform analysis
 3. Python (pandas, matplotlib, seaborn) to Vizualization
-4. 
+
+---
+
 This repository includes SQL scripts for healthcare analytics that can be adapted for hospital data systems aiming to enhance patient care tracking and financial oversight.
 ---
 ## Query 1: Appointment + Treatment + Billing + Patient Integration

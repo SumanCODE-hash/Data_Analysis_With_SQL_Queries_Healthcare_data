@@ -198,6 +198,7 @@ GROUP BY d.specialization;
 | Doctors by Hospital Branch | Doctors by Specialization |
 |----------------------------|----------------------------|
 | ![Counts doctors in each hospital branch](Images/Doctors_by_Hospital_Branch.png) | ![Number of doctors by specialization](Images/Doctors_by_Specialization.png) |
+
 ## Insights:
 1️⃣ Observations / Insights
 The hospital serves 50 patients, with a higher share of males (31) compared to females (19).
